@@ -12,75 +12,85 @@
         <h1 class="text-4xl font-bold">Dr. Majji Rambabu</h1>
         <p class="text-xl mt-2 text-slate-300">Postdoctoral Associate | Baylor College of Medicine</p>
         <div class="mt-6 flex justify-center gap-4">
-            <a href="mailto:your-email@example.com" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded">Email</a>
-            <a href="https://github.com/yourusername" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded">GitHub</a>
+            <a href="mailto:your-email@example.com" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition">Email</a>
+            <a href="https://github.com/majjirambabu8" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded transition">GitHub Profile</a>
         </div>
     </header>
 
     <main class="max-w-4xl mx-auto py-12 px-6">
         
         <section class="mb-12">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Research Summary</h2>
+            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Research Focus</h2>
             <p class="text-lg leading-relaxed">
-                Specializing in robust bioinformatics solutions for **Next-Generation Sequencing (NGS)**. 
-                My work focuses on transcriptomics, including RNA-seq and PolyA-seq analysis, alternative splicing, 
-                and Gene Ontology enrichment. I build scalable pipelines to bridge the gap between complex 
-                biological data and actionable insights.
+                I am a <strong>Postdoctoral Associate at Baylor College of Medicine (BCM)</strong> specializing in robust bioinformatics solutions for high-throughput sequencing data. My work bridges the gap between complex transcriptomic datasets and biological discovery through scalable pipeline development.
             </p>
+            <ul class="list-disc ml-6 mt-4 space-y-2 text-gray-700">
+                <li><strong>Regulatory Networks:</strong> Advanced implementation of <strong>SCENIC</strong> for gene regulatory network inference and regulon analysis.</li>
+                <li><strong>Temporal Dynamics:</strong> Utilizing <strong>Mfuzz</strong> soft clustering to identify patterns in longitudinal expression profiling.</li>
+                <li><strong>Alternative Splicing:</strong> Large-scale quantification and visualization of isoform variation using <strong>rMATS</strong>.</li>
+                <li><strong>Transcriptomics:</strong> Comprehensive analysis of RNA-seq and PolyA-seq data to uncover differential expression patterns.</li>
+            </ul>
         </section>
 
         <section class="mb-12">
             <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Technical Toolkit</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
                 <div class="p-4 bg-white shadow rounded">
-                    <h3 class="font-bold text-blue-600">Programming</h3>
-                    <p>Python (Pandas, Matplotlib), R (DESeq2, clusterProfiler), Bash</p>
+                    <h3 class="font-bold text-blue-600 mb-2">Programming</h3>
+                    <p class="text-sm">Python (Pandas, Seaborn, Matplotlib), R (DESeq2, clusterProfiler, pheatmap), Bash</p>
                 </div>
                 <div class="p-4 bg-white shadow rounded">
-                    <h3 class="font-bold text-blue-600">Bioinformatics</h3>
-                    <p>Transcriptomics, rMATS, NGS Pipelines, GO Enrichment</p>
+                    <h3 class="font-bold text-blue-600 mb-2">Bioinformatics</h3>
+                    <p class="text-sm">Single-cell RNA-seq, SCENIC, Mfuzz, rMATS, GO/KEGG Enrichment, Gviz</p>
                 </div>
                 <div class="p-4 bg-white shadow rounded">
-                    <h3 class="font-bold text-blue-600">Infrastructure</h3>
-                    <p>HPC Management, Linux Servers, Git</p>
+                    <h3 class="font-bold text-blue-600 mb-2">Infrastructure</h3>
+                    <p class="text-sm">HPC Cluster Management, Linux Server Administration, Git/GitHub, Snakemake</p>
                 </div>
             </div>
         </section>
 
         <section class="mb-12">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Selected Projects</h2>
+            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Software & Pipelines</h2>
             <div class="space-y-6 mt-4">
-                <div class="border-l-4 border-blue-600 pl-4">
-                    <h3 class="text-xl font-bold">Automated RNA-Seq Pipeline</h3>
-                    <p class="text-gray-600 italic">Python, Snakemake, R</p>
-                    <p class="mt-2">Developed a robust pipeline for differential gene expression analysis and automated visualization of volcano plots and heatmaps.</p>
+                <div class="border-l-4 border-blue-600 pl-4 bg-white p-4 shadow-sm rounded-r">
+                    <h3 class="text-xl font-bold">DEG & Visualization Suite</h3>
+                    <p class="text-gray-600 italic">R, Python, Seaborn</p>
+                    <p class="mt-2 text-gray-700">A collection of scripts for automated Differential Gene Expression (DEG) analysis, including the generation of publication-ready Volcano plots and Heatmaps.</p>
+                    <a href="https://github.com/majjirambabu8" class="text-blue-600 text-sm font-semibold hover:underline">View Repository &rarr;</a>
                 </div>
-                <div class="border-l-4 border-blue-600 pl-4">
-                    <h3 class="text-xl font-bold">Alternative Splicing Analysis (rMATS)</h3>
-                    <p class="text-gray-600 italic">R, Python, HPC</p>
-                    <p class="mt-2">Implementing large-scale splicing analysis across diverse datasets to identify novel isoform switches.</p>
+                <div class="border-l-4 border-blue-600 pl-4 bg-white p-4 shadow-sm rounded-r">
+                    <h3 class="text-xl font-bold">Genomic Data Visualization (Gviz)</h3>
+                    <p class="text-gray-600 italic">R, Bioconductor</p>
+                    <p class="mt-2 text-gray-700">Implementing advanced track-based visualizations for genomic features, integrating various data types into cohesive biological narratives.</p>
+                </div>
+                <div class="border-l-4 border-blue-600 pl-4 bg-white p-4 shadow-sm rounded-r">
+                    <h3 class="text-xl font-bold">Alternative Splicing Pipeline</h3>
+                    <p class="text-gray-600 italic">Python, rMATS, HPC</p>
+                    <p class="mt-2 text-gray-700">Deploying large-scale splicing analysis across diverse datasets to identify novel isoform switches in disease models.</p>
                 </div>
             </div>
         </section>
 
-        <section class="bg-blue-50 p-6 rounded-lg text-center">
+        <section class="bg-blue-50 p-8 rounded-xl text-center shadow-inner">
+            <h2 class="text-xl font-semibold mb-6 text-slate-700 uppercase tracking-wide">Scientific Impact</h2>
             <div class="flex justify-around">
                 <div>
-                    <p class="text-3xl font-bold text-blue-700">156</p>
-                    <p class="text-sm uppercase tracking-wide">Citations</p>
+                    <p class="text-4xl font-bold text-blue-700">156</p>
+                    <p class="text-sm text-gray-600 font-medium">Citations</p>
                 </div>
                 <div>
-                    <p class="text-3xl font-bold text-blue-700">7</p>
-                    <p class="text-sm uppercase tracking-wide">H-Index</p>
+                    <p class="text-4xl font-bold text-blue-700">7</p>
+                    <p class="text-sm text-gray-600 font-medium">H-Index</p>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="text-center py-8 text-gray-500 text-sm">
-        &copy; 2026 Dr. Majji Rambabu | Built with Tailwind CSS
+    <footer class="text-center py-8 text-gray-500 text-sm border-t mt-12">
+        &copy; 2026 Dr. Majji Rambabu | Built with Tailwind CSS | Hosted on GitHub Pages
     </footer>
 
 </body>
-</html> 
+</html>
