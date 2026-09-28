@@ -1,145 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Rambabu Majji | Portfolio</title>
+    <title>Dr. Rambabu Majji | Computational Biologist & Bioinformatician</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
 
-    <!-- Header Section -->
-    <header class="bg-slate-800 text-white py-16 px-4 text-center">
-        <h1 class="text-4xl font-bold tracking-tight">Dr. Rambabu Majji</h1>
-        <p class="text-xl mt-2 text-slate-300">Postdoctoral Associate | Baylor College of Medicine</p>
-        <p class="text-sm mt-1 text-slate-400">Houston, Texas</p>
-        <div class="mt-6 flex justify-center flex-wrap gap-4">
-            <a href="mailto:majjirambabu8@gmail.com" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition font-medium inline-flex items-center gap-2 text-sm">
-                <span>✉️</span> Email: majjirambabu8@gmail.com
-            </a>
-            <a href="https://github.com/majjirambabu8" target="_blank" rel="noopener noreferrer" class="bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded transition font-medium text-sm">GitHub Profile</a>
-            <a href="https://scholar.google.com/citations?user=5wtWic4AAAAJ" target="_blank" rel="noopener noreferrer" class="bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded transition font-medium text-sm">Google Scholar</a>
+    <!-- Subtle Sticky Header Bar -->
+    <header class="bg-slate-900 text-white pt-14 pb-12 px-6 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto text-center">
+            
+            <!-- Live Status Indicator -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-slate-800 text-slate-300 border border-slate-700 mb-5 shadow-sm">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Postdoctoral Associate &middot; Baylor College of Medicine
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+                Dr. Rambabu Majji
+            </h1>
+            
+            <p class="mt-3 text-lg sm:text-xl font-normal text-slate-300 max-w-2xl mx-auto">
+                Computational Biologist & Bioinformatician
+            </p>
+            
+            <p class="text-xs font-medium text-slate-400 mt-2 flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-location-dot text-rose-400"></i> Houston, Texas &middot; Texas Medical Center
+            </p>
+
+            <!-- Action Link Badges with Copy Feedback -->
+            <div class="mt-6 flex flex-wrap justify-center gap-3">
+                <button onclick="navigator.clipboard.writeText('majjirambabu8@gmail.com'); this.innerHTML='<i class=\'fa-solid fa-check text-emerald-400\'></i> Copied!'; setTimeout(() => this.innerHTML='<i class=\'fa-solid fa-envelope\'></i> Copy Email', 2000)" 
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-xs font-semibold shadow-sm transition-all inline-flex items-center gap-2 cursor-pointer">
+                    <i class="fa-solid fa-envelope"></i> Copy Email
+                </button>
+                <a href="mailto:majjirambabu8@gmail.com" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-4 py-2 rounded-lg text-xs font-semibold shadow-sm transition-all inline-flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Send Email
+                </a>
+                <a href="https://github.com/majjirambabu8" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-4 py-2 rounded-lg text-xs font-semibold shadow-sm transition-all inline-flex items-center gap-2">
+                    <i class="fa-brands fa-github text-sm"></i> GitHub
+                </a>
+                <a href="https://scholar.google.com/citations?user=5wtWic4AAAAJ" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-4 py-2 rounded-lg text-xs font-semibold shadow-sm transition-all inline-flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap text-sm"></i> Google Scholar
+                </a>
+            </div>
+
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto py-12 px-6">
-        
+    <main class="max-w-5xl mx-auto py-12 px-6 space-y-12">
+
         <!-- Research Focus -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Research Focus</h2>
-            <p class="text-lg leading-relaxed text-gray-800">
-                I am a <strong>Postdoctoral Associate at Baylor College of Medicine (BCM)</strong> specializing in high-throughput single-cell and spatial omics, computational biology, machine learning, and scalable bioinformatics pipeline architecture. My research focuses on dissecting cellular heterogeneity, gene regulatory mechanisms, alternative splicing, and post-transcriptional dynamics across high-dimensional genomic datasets.
+        <section class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm">
+            <h2 class="text-xl font-bold text-slate-900 border-b border-slate-100 pb-3 mb-4 flex items-center gap-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                Research Focus & Overview
+            </h2>
+            <p class="text-base leading-relaxed text-slate-700">
+                I am a <strong>Postdoctoral Associate at Baylor College of Medicine (BCM)</strong> specializing in high-throughput single-cell and spatial omics, computational biology, machine learning, and scalable bioinformatics pipeline engineering. My research bridges high-dimensional multi-omics integration (transcriptomics, epigenomics, and genomics) with translational biomarker discovery, cellular heterogeneity mapping, and post-transcriptional RNA regulation.
             </p>
-            <ul class="list-disc ml-6 mt-4 space-y-2 text-gray-700">
-                <li><strong>Single-Cell & Spatial Omics:</strong> End-to-end sc/snRNA-seq processing, batch correction with <strong>Harmony</strong>, metacell modeling via <strong>SEACells</strong>, and automated cell-type annotation with <strong>CellTypist</strong>.</li>
-                <li><strong>Gene Regulatory Networks & Trajectories:</strong> Inferring regulon dynamics using <strong>SCENIC / pySCENIC</strong>, pseudobulk differential analysis via <strong>DESeq2</strong>, and lineage trajectory tracing.</li>
-                <li><strong>Transcriptomic Profiling & APA:</strong> Comprehensive quantification of RNA-seq, targeted PolyA-seq, and Alternative Polyadenylation (APA) patterns to characterize post-transcriptional regulation.</li>
-                <li><strong>Alternative Splicing:</strong> Large-scale isoform variation discovery and differential splicing quantification using <strong>rMATS-turbo</strong>.</li>
-                <li><strong>Temporal Dynamics & Machine Learning:</strong> Pattern extraction and soft clustering across longitudinal time-series data using <strong>Mfuzz</strong> alongside predictive modeling with <strong>Scikit-learn</strong>.</li>
-                <li><strong>Epigenomics & Functional Genomics:</strong> Profiling chromatin accessibility (ATAC-seq), CUT&RUN, genomic track computation with <strong>deepTools</strong>, and motif enrichment using <strong>HOMER</strong>.</li>
-            </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 mt-5">
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/60 text-sm">
+                    <strong class="text-slate-900 font-semibold flex items-center gap-1.5 mb-1">
+                        <i class="fa-solid fa-dna text-blue-600 text-xs"></i> Single-Cell & Spatial Omics
+                    </strong>
+                    <span class="text-slate-600 text-xs leading-relaxed block">
+                        End-to-end sc/snRNA-seq processing, batch correction with <strong>Harmony</strong>, metacell aggregation via <strong>SEACells</strong>, and automated cell-type annotation with <strong>CellTypist</strong>.
+                    </span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/60 text-sm">
+                    <strong class="text-slate-900 font-semibold flex items-center gap-1.5 mb-1">
+                        <i class="fa-solid fa-network-wired text-blue-600 text-xs"></i> Regulatory Networks & Trajectories
+                    </strong>
+                    <span class="text-slate-600 text-xs leading-relaxed block">
+                        Inferring transcription factor regulon dynamics with <strong>pySCENIC</strong>, pseudobulk differential analysis via <strong>DESeq2</strong>, and lineage trajectory tracing.
+                    </span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/60 text-sm">
+                    <strong class="text-slate-900 font-semibold flex items-center gap-1.5 mb-1">
+                        <i class="fa-solid fa-layer-group text-blue-600 text-xs"></i> Integrative Multi-Omics & Variants
+                    </strong>
+                    <span class="text-slate-600 text-xs leading-relaxed block">
+                        Harmonizing bulk RNA-seq, Whole Exome/Genome Sequencing (WES/WGS), ATAC-seq chromatin accessibility, and PolyA-seq for Alternative Polyadenylation (APA).
+                    </span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/60 text-sm">
+                    <strong class="text-slate-900 font-semibold flex items-center gap-1.5 mb-1">
+                        <i class="fa-solid fa-scissors text-blue-600 text-xs"></i> Post-Transcriptional Splicing
+                    </strong>
+                    <span class="text-slate-600 text-xs leading-relaxed block">
+                        Isoform variation discovery and alternative splicing event quantification across complex clinical cohorts using <strong>rMATS-turbo</strong>.
+                    </span>
+                </div>
+            </div>
         </section>
 
-        <!-- Technical Toolkit -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Comprehensive Technical Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+        <!-- Technical Stack (Bento Cards with Micro-Pills) -->
+        <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-5 flex items-center gap-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                Comprehensive Technical Stack
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 
-                <!-- Programming & Scripting -->
-                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
-                    <h3 class="font-bold text-blue-700 mb-2">Programming & Scripting</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">
-                        <strong>Python:</strong> Scikit-learn, NumPy, Pandas, SciPy, Seaborn, Matplotlib, PyBEDTools<br>
-                        <strong>R:</strong> Seurat, Bioconductor, DESeq2, edgeR, tidyverse, ggplot2, pheatmap<br>
-                        <strong>Shell:</strong> Advanced Bash scripting, AWK, sed, regular expressions
-                    </p>
+                <!-- Programming -->
+                <div class="p-5 bg-white border border-slate-200/80 rounded-xl shadow-sm hover:border-blue-400 hover:shadow-md transition-all">
+                    <h3 class="font-bold text-slate-900 text-sm mb-3 flex items-center justify-between">
+                        <span>Programming & Scripting</span>
+                        <i class="fa-solid fa-code text-slate-400 text-xs"></i>
+                    </h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">Python</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">R</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">Bash/Shell</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">NumPy</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">Pandas</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">tidyverse</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">ggplot2</span>
+                    </div>
                 </div>
 
-                <!-- Single-Cell & Spatial Omics -->
-                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
-                    <h3 class="font-bold text-blue-700 mb-2">Single-Cell & Spatial Omics</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">
-                        <strong>Cell Ranger</strong>, <strong>Seurat</strong>, <strong>Scanpy</strong>, multi-sample batch integration via <strong>Harmony</strong>, <strong>SEACells</strong> metacell aggregation, automated annotation with <strong>CellTypist</strong>
-                    </p>
+                <!-- Single-Cell & Spatial -->
+                <div class="p-5 bg-white border border-slate-200/80 rounded-xl shadow-sm hover:border-blue-400 hover:shadow-md transition-all">
+                    <h3 class="font-bold text-slate-900 text-sm mb-3 flex items-center justify-between">
+                        <span>Single-Cell & Spatial Omics</span>
+                        <i class="fa-solid fa-cubes text-slate-400 text-xs"></i>
+                    </h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">Cell Ranger</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">Seurat</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">Scanpy</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">Harmony</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">SEACells</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">CellTypist</span>
+                    </div>
                 </div>
 
-                <!-- High-Throughput Sequencing -->
-                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
-                    <h3 class="font-bold text-blue-700 mb-2">Transcriptomics & Splicing</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">
-                        Bulk RNA-seq, 3′-targeted PolyA-seq, alternative polyadenylation (APA), <strong>rMATS-turbo</strong> alternative splicing analysis, <strong>STAR</strong>, <strong>Bowtie2</strong>, <strong>featureCounts</strong>
-                    </p>
+                <!-- Transcriptomics & Splicing -->
+                <div class="p-5 bg-white border border-slate-200/80 rounded-xl shadow-sm hover:border-blue-400 hover:shadow-md transition-all">
+                    <h3 class="font-bold text-slate-900 text-sm mb-3 flex items-center justify-between">
+                        <span>Transcriptomics & Splicing</span>
+                        <i class="fa-solid fa-microscope text-slate-400 text-xs"></i>
+                    </h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">DESeq2</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">rMATS-turbo</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">PolyA-seq (APA)</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">STAR</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">Bowtie2</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">edgeR</span>
+                    </div>
                 </div>
 
-                <!-- Network Inference & Machine Learning -->
-                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
-                    <h3 class="font-bold text-blue-700 mb-2">Networks & Modeling</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">
-                        Gene regulatory network (GRN) reconstruction via <strong>SCENIC / pySCENIC</strong>, soft time-course clustering via <strong>Mfuzz</strong>, statistical modeling, translational biomarker discovery
-                    </p>
+                <!-- ML & Modeling -->
+                <div class="p-5 bg-white border border-slate-200/80 rounded-xl shadow-sm hover:border-blue-400 hover:shadow-md transition-all">
+                    <h3 class="font-bold text-slate-900 text-sm mb-3 flex items-center justify-between">
+                        <span>Machine Learning & Modeling</span>
+                        <i class="fa-solid fa-brain text-slate-400 text-xs"></i>
+                    </h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">pySCENIC</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">Scikit-learn</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">Mfuzz</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">Random Forests</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">PCA / UMAP</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">Biomarker Models</span>
+                    </div>
                 </div>
 
-                <!-- Epigenomics & Functional Analysis -->
-                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
-                    <h3 class="font-bold text-blue-700 mb-2">Epigenomics & Multi-Omics</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">
-                        <strong>ATAC-seq</strong>, <strong>CUT&RUN-seq</strong>, <strong>deepTools</strong> (computeMatrix, plotProfile), motif discovery via <strong>HOMER</strong>, WES/WGS variant calling, pathway enrichment with <strong>clusterProfiler</strong>
-                    </p>
+                <!-- Epigenomics & Multi-Omics -->
+                <div class="p-5 bg-white border border-slate-200/80 rounded-xl shadow-sm hover:border-blue-400 hover:shadow-md transition-all">
+                    <h3 class="font-bold text-slate-900 text-sm mb-3 flex items-center justify-between">
+                        <span>Epigenomics & Multi-Omics</span>
+                        <i class="fa-solid fa-chart-line text-slate-400 text-xs"></i>
+                    </h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">ATAC-seq</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">CUT&RUN</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">deepTools</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">HOMER (Motifs)</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">WES/WGS</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">clusterProfiler</span>
+                    </div>
                 </div>
 
-                <!-- HPC, Cloud & Infrastructure -->
-                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
-                    <h3 class="font-bold text-blue-700 mb-2">HPC, Cloud & Containers</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">
-                        Linux cluster administration, <strong>SLURM</strong> job scheduling, parallel processing (<code>xargs</code>, <code>parallel</code>), <strong>Docker</strong> containerization, cloud data sync with <strong>rclone</strong> and <strong>AWS S3</strong>
-                    </p>
+                <!-- HPC & Infrastructure -->
+                <div class="p-5 bg-white border border-slate-200/80 rounded-xl shadow-sm hover:border-blue-400 hover:shadow-md transition-all">
+                    <h3 class="font-bold text-slate-900 text-sm mb-3 flex items-center justify-between">
+                        <span>HPC, Cloud & Containers</span>
+                        <i class="fa-solid fa-server text-slate-400 text-xs"></i>
+                    </h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">Linux / HPC</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200 rounded">SLURM Jobs</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">Docker</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">Singularity</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">AWS S3</span>
+                        <span class="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200 rounded">rclone</span>
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Software, Pipelines & Workflows -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Pipelines & Computational Workflows</h2>
-            <div class="space-y-6 mt-4">
+        <!-- Pipelines & Workflows -->
+        <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-5 flex items-center gap-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                Pipelines & Computational Workflows
+            </h2>
+            <div class="space-y-4">
                 
-                <div class="border-l-4 border-blue-600 pl-4 bg-white p-5 shadow-sm border border-gray-200 rounded-r-lg">
-                    <h3 class="text-xl font-bold text-gray-900">End-to-End Single-Cell & Spatial Profiling Suite</h3>
-                    <p class="text-gray-500 text-sm font-mono mt-0.5">Cell Ranger, Seurat, Scanpy, Harmony, SEACells, CellTypist, SLURM</p>
-                    <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+                <!-- Workflow 1 -->
+                <div class="p-5 bg-white border border-slate-200/80 rounded-xl shadow-sm hover:border-blue-400 transition-all">
+                    <div class="flex items-center justify-between gap-3 flex-wrap">
+                        <h3 class="font-bold text-slate-900 text-base">End-to-End Single-Cell & Spatial Profiling Suite</h3>
+                        <span class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">scRNA-seq</span>
+                    </div>
+                    <p class="text-xs font-mono text-slate-500 mt-1">Cell Ranger &middot; Seurat &middot; Scanpy &middot; Harmony &middot; SEACells &middot; CellTypist &middot; SLURM</p>
+                    <p class="mt-2 text-sm text-slate-600 leading-relaxed">
                         Production-grade computational workflow processing raw FASTQ reads through Cell Ranger to multi-sample batch integration via Harmony, metacell aggregation with SEACells, automated cell annotation using CellTypist, and pseudobulk differential analysis with DESeq2.
                     </p>
                 </div>
 
-                <div class="border-l-4 border-blue-600 pl-4 bg-white p-5 shadow-sm border border-gray-200 rounded-r-lg">
-                    <h3 class="text-xl font-bold text-gray-900">Differential Expression & Multi-Omics Harmonization</h3>
-                    <p class="text-gray-500 text-sm font-mono mt-0.5">R (DESeq2, pheatmap, ggplot2), Python (PyBEDTools, Seaborn), Bash</p>
-                    <p class="mt-2 text-gray-700 text-sm leading-relaxed">
-                        Automated end-to-end pipelines for robust differential expression analysis, cross-modality identifier harmonization, genomic coordinate operations with PyBEDTools, and publication-ready Volcano and heatmap visualizations.
+                <!-- Workflow 2 -->
+                <div class="p-5 bg-white border border-slate-200/80 rounded-xl shadow-sm hover:border-blue-400 transition-all">
+                    <div class="flex items-center justify-between gap-3 flex-wrap">
+                        <h3 class="font-bold text-slate-900 text-base">Differential Expression & Multi-Omics Harmonization</h3>
+                        <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">Transcriptomics</span>
+                    </div>
+                    <p class="text-xs font-mono text-slate-500 mt-1">R (DESeq2, limma, pheatmap) &middot; Python (PyBEDTools, Seaborn) &middot; Bash</p>
+                    <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                        Automated pipelines for robust differential expression analysis, cross-modality Ensembl/RefSeq harmonization, coordinate intersections, and publication-ready Volcano, heatmap, and PCA visualizations.
                     </p>
-                    <a href="https://github.com/majjirambabu8" target="_blank" rel="noopener noreferrer" class="inline-block mt-3 text-blue-600 text-sm font-semibold hover:underline">View on GitHub &rarr;</a>
+                    <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="text-slate-400">Open-source pipeline repository</span>
+                        <a href="https://github.com/majjirambabu8" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                            GitHub Repository &rarr;
+                        </a>
+                    </div>
                 </div>
 
-                <div class="border-l-4 border-blue-600 pl-4 bg-white p-5 shadow-sm border border-gray-200 rounded-r-lg">
-                    <h3 class="text-xl font-bold text-gray-900">Alternative Splicing & APA Analysis Engine</h3>
-                    <p class="text-gray-500 text-sm font-mono mt-0.5">rMATS-turbo, Python, Docker, HPC/SLURM</p>
-                    <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+                <!-- Workflow 3 -->
+                <div class="p-5 bg-white border border-slate-200/80 rounded-xl shadow-sm hover:border-blue-400 transition-all">
+                    <div class="flex items-center justify-between gap-3 flex-wrap">
+                        <h3 class="font-bold text-slate-900 text-base">Alternative Splicing & APA Analysis Engine</h3>
+                        <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">RNA Dynamics</span>
+                    </div>
+                    <p class="text-xs font-mono text-slate-500 mt-1">rMATS-turbo &middot; Python &middot; Docker &middot; HPC/SLURM</p>
+                    <p class="mt-2 text-sm text-slate-600 leading-relaxed">
                         High-throughput analysis framework to quantify and visualize alternative splicing events (SE, MXE, A5SS, A3SS, RI) and 3′-targeted polyadenylation shifts across large cohorts in containerized HPC environments.
                     </p>
                 </div>
 
-                <div class="border-l-4 border-blue-600 pl-4 bg-white p-5 shadow-sm border border-gray-200 rounded-r-lg">
-                    <h3 class="text-xl font-bold text-gray-900">Single-Cell Regulatory Network & Dynamics Pipeline</h3>
-                    <p class="text-gray-500 text-sm font-mono mt-0.5">pySCENIC, Mfuzz, Scikit-learn, Snakemake</p>
-                    <p class="mt-2 text-gray-700 text-sm leading-relaxed">
-                        Scalable pipeline integrating single-cell transcriptomics with cis-regulatory motif databases for transcription factor regulon discovery alongside temporal pattern clustering and predictive biomarker discovery.
-                    </p>
-                </div>
-
-                <div class="border-l-4 border-blue-600 pl-4 bg-white p-5 shadow-sm border border-gray-200 rounded-r-lg">
-                    <h3 class="text-xl font-bold text-gray-900">Epigenomics & Motif Analysis Framework</h3>
-                    <p class="text-gray-500 text-sm font-mono mt-0.5">ATAC-seq, CUT&RUN, deepTools, HOMER, Bowtie2, Bioconductor</p>
-                    <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+                <!-- Workflow 4 -->
+                <div class="p-5 bg-white border border-slate-200/80 rounded-xl shadow-sm hover:border-blue-400 transition-all">
+                    <div class="flex items-center justify-between gap-3 flex-wrap">
+                        <h3 class="font-bold text-slate-900 text-base">Epigenomics & Motif Analysis Framework</h3>
+                        <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">Chromatin</span>
+                    </div>
+                    <p class="text-xs font-mono text-slate-500 mt-1">ATAC-seq &middot; CUT&RUN &middot; deepTools &middot; HOMER &middot; Bowtie2 &middot; Bioconductor</p>
+                    <p class="mt-2 text-sm text-slate-600 leading-relaxed">
                         Comprehensive processing loop for alignment, peak/matrix coverage calculations, signal profiling over genomic features, and de novo transcription factor motif discovery.
                     </p>
                 </div>
@@ -147,21 +274,21 @@
             </div>
         </section>
 
-        <!-- Scientific Impact -->
-        <section class="bg-blue-50/70 border border-blue-100 p-8 rounded-xl text-center">
-            <h2 class="text-sm font-semibold mb-6 text-slate-700 uppercase tracking-widest">Scientific Impact & Publications</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div>
-                    <p class="text-4xl font-bold text-blue-700">30+</p>
-                    <p class="text-sm text-gray-600 font-medium mt-1">Peer-Reviewed Publications</p>
+        <!-- Scientific Impact Metrics -->
+        <section class="p-6 sm:p-8 bg-white border border-slate-200/80 rounded-2xl shadow-sm text-center">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-6">Scientific Impact & Publications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
+                <div class="pt-4 sm:pt-0">
+                    <p class="text-4xl font-extrabold text-slate-900 tracking-tight">30+</p>
+                    <p class="text-xs font-medium text-slate-500 mt-1">Peer-Reviewed Publications</p>
                 </div>
-                <div>
-                    <p class="text-4xl font-bold text-blue-700">225+</p>
-                    <p class="text-sm text-gray-600 font-medium mt-1">Citations</p>
+                <div class="pt-4 sm:pt-0">
+                    <p class="text-4xl font-extrabold text-blue-600 tracking-tight">225+</p>
+                    <p class="text-xs font-medium text-slate-500 mt-1">Scholarly Citations</p>
                 </div>
-                <div>
-                    <p class="text-4xl font-bold text-blue-700">10</p>
-                    <p class="text-sm text-gray-600 font-medium mt-1">h-index</p>
+                <div class="pt-4 sm:pt-0">
+                    <p class="text-4xl font-extrabold text-slate-900 tracking-tight">10</p>
+                    <p class="text-xs font-medium text-slate-500 mt-1">h-index</p>
                 </div>
             </div>
         </section>
@@ -169,8 +296,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-center py-8 text-gray-500 text-sm border-t border-gray-200 mt-12 bg-white">
-        &copy; 2026 Dr. Rambabu Majji | Baylor College of Medicine | Hosted on GitHub Pages
+    <footer class="text-center py-8 text-slate-400 text-xs border-t border-slate-200 bg-white">
+        &copy; 2026 Dr. Rambabu Majji &middot; Baylor College of Medicine &middot; Hosted on GitHub Pages
     </footer>
 
 </body>
