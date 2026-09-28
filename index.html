@@ -3,129 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Rambabu Majji | Computational Biologist</title>
+    <title>Dr. Rambabu Majji | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-900 font-sans antialiased leading-normal">
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
 
-    <!-- Header / Contact Info -->
-    <header class="border-b border-gray-200 py-12 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">Dr. Rambabu Majji</h1>
-            <p class="text-lg text-gray-700 mt-1">Postdoctoral Associate in Computational Biology</p>
-            <p class="text-sm text-gray-500">Baylor College of Medicine &middot; Houston, Texas</p>
-
-            <div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-600">
-                <a href="mailto:majjirambabu8@gmail.com" class="text-blue-700 hover:underline">majjirambabu8@gmail.com</a>
-                <span class="text-gray-300">|</span>
-                <a href="https://github.com/majjirambabu8" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline">GitHub</a>
-                <span class="text-gray-300">|</span>
-                <a href="https://scholar.google.com/citations?user=5wtWic4AAAAJ" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline">Google Scholar</a>
-            </div>
+    <!-- Header Section -->
+    <header class="bg-slate-800 text-white py-16 px-4 text-center">
+        <h1 class="text-4xl font-bold tracking-tight">Dr. Rambabu Majji</h1>
+        <p class="text-xl mt-2 text-slate-300">Postdoctoral Associate | Baylor College of Medicine</p>
+        <p class="text-sm mt-1 text-slate-400">Houston, Texas</p>
+        <div class="mt-6 flex justify-center flex-wrap gap-4">
+            <a href="mailto:majjirambabu8@gmail.com" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition font-medium inline-flex items-center gap-2 text-sm">
+                <span>✉️</span> Email: majjirambabu8@gmail.com
+            </a>
+            <a href="https://github.com/majjirambabu8" target="_blank" rel="noopener noreferrer" class="bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded transition font-medium text-sm">GitHub Profile</a>
+            <a href="https://scholar.google.com/citations?user=5wtWic4AAAAJ" target="_blank" rel="noopener noreferrer" class="bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded transition font-medium text-sm">Google Scholar</a>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto py-10 px-6 space-y-12">
-
+    <main class="max-w-5xl mx-auto py-12 px-6">
+        
         <!-- Research Focus -->
-        <section>
-            <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4">Research Focus</h2>
-            <p class="text-gray-700 leading-relaxed">
-                I am a Postdoctoral Associate at Baylor College of Medicine specializing in high-throughput single-cell and spatial omics, computational biology, and scalable bioinformatics pipeline engineering. My research focuses on integrating multi-omics data—spanning transcriptomics, epigenomics, and genomics—to map cellular heterogeneity, infer gene regulatory networks, and discover translational biomarkers.
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Research Focus</h2>
+            <p class="text-lg leading-relaxed text-gray-800">
+                I am a <strong>Postdoctoral Associate at Baylor College of Medicine (BCM)</strong> specializing in high-throughput single-cell and spatial omics, computational biology, machine learning, and scalable bioinformatics pipeline architecture. My research focuses on dissecting cellular heterogeneity, gene regulatory mechanisms, alternative splicing, and post-transcriptional dynamics across high-dimensional genomic datasets.
             </p>
-            <ul class="list-disc list-outside ml-5 mt-4 space-y-2 text-gray-700 text-sm">
-                <li><strong>Single-Cell & Spatial Omics:</strong> Processing sc/snRNA-seq datasets from raw reads to downstream states, batch integration with Harmony, metacell modeling via SEACells, and automated cell-type annotation with CellTypist.</li>
-                <li><strong>Gene Regulatory Networks:</strong> Reconstructing transcription factor regulons using pySCENIC, lineage trajectory analysis, and pseudobulk differential expression using DESeq2.</li>
-                <li><strong>Multi-Omics Integration:</strong> Harmonizing bulk RNA-seq, Whole Exome/Genome Sequencing (WES/WGS), ATAC-seq, and targeted 3&prime; PolyA-seq for alternative polyadenylation (APA).</li>
-                <li><strong>Alternative Splicing:</strong> Quantifying isoform switches and differential splicing events using rMATS-turbo.</li>
-                <li><strong>Machine Learning & Statistics:</strong> Supervised and unsupervised learning (Scikit-learn) for patient stratification, biomarker feature selection, and soft time-course clustering via Mfuzz.</li>
-                <li><strong>Epigenomics & Functional Genomics:</strong> Profiling chromatin accessibility (ATAC-seq), CUT&RUN, genomic coverage calculations via deepTools, and transcription factor motif discovery via HOMER.</li>
+            <ul class="list-disc ml-6 mt-4 space-y-2 text-gray-700">
+                <li><strong>Single-Cell & Spatial Omics:</strong> End-to-end sc/snRNA-seq processing, batch correction with <strong>Harmony</strong>, metacell modeling via <strong>SEACells</strong>, and automated cell-type annotation with <strong>CellTypist</strong>.</li>
+                <li><strong>Gene Regulatory Networks & Trajectories:</strong> Inferring regulon dynamics using <strong>SCENIC / pySCENIC</strong>, pseudobulk differential analysis via <strong>DESeq2</strong>, and lineage trajectory tracing.</li>
+                <li><strong>Transcriptomic Profiling & APA:</strong> Comprehensive quantification of RNA-seq, targeted PolyA-seq, and Alternative Polyadenylation (APA) patterns to characterize post-transcriptional regulation.</li>
+                <li><strong>Alternative Splicing:</strong> Large-scale isoform variation discovery and differential splicing quantification using <strong>rMATS-turbo</strong>.</li>
+                <li><strong>Temporal Dynamics & Machine Learning:</strong> Pattern extraction and soft clustering across longitudinal time-series data using <strong>Mfuzz</strong> alongside predictive modeling with <strong>Scikit-learn</strong>.</li>
+                <li><strong>Epigenomics & Functional Genomics:</strong> Profiling chromatin accessibility (ATAC-seq), CUT&RUN, genomic track computation with <strong>deepTools</strong>, and motif enrichment using <strong>HOMER</strong>.</li>
             </ul>
         </section>
 
-        <!-- Technical Skills -->
-        <section>
-            <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4">Technical Skills</h2>
-            <div class="space-y-3 text-sm text-gray-800">
-                <div>
-                    <strong class="font-semibold text-gray-900">Programming & Scripting:</strong>
-                    <span>Python (NumPy, Pandas, Scikit-learn, SciPy, Matplotlib, Seaborn), R (Seurat, DESeq2, Bioconductor, tidyverse, ggplot2), Bash/Shell scripting, AWK, SQL.</span>
-                </div>
-                <div>
-                    <strong class="font-semibold text-gray-900">Single-Cell & Spatial Analysis:</strong>
-                    <span>Cell Ranger, Seurat, Scanpy, Harmony, SEACells, CellTypist, pySCENIC, spatial transcriptomics.</span>
-                </div>
-                <div>
-                    <strong class="font-semibold text-gray-900">Genomics & Epigenomics:</strong>
-                    <span>Bulk RNA-seq, PolyA-seq (APA), rMATS-turbo, ATAC-seq, CUT&RUN, WES/WGS variant calling, deepTools, HOMER, Bowtie2, STAR.</span>
-                </div>
-                <div>
-                    <strong class="font-semibold text-gray-900">Machine Learning & Modeling:</strong>
-                    <span>Supervised/unsupervised classification, random forests, regularized regression, PCA, UMAP, Mfuzz clustering, gene regulatory network modeling.</span>
-                </div>
-                <div>
-                    <strong class="font-semibold text-gray-900">HPC & Infrastructure:</strong>
-                    <span>Linux/Unix cluster administration, SLURM batch job scheduling, Docker, Singularity, Snakemake, Git/GitHub, AWS S3, rclone.</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Computational Pipelines -->
-        <section>
-            <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4">Computational Workflows & Pipelines</h2>
-            <div class="space-y-6">
-
-                <div>
-                    <h3 class="font-semibold text-base text-gray-900">Single-Cell & Spatial Transcriptomics Pipeline</h3>
-                    <p class="text-xs text-gray-500 font-mono mt-0.5">Cell Ranger &middot; Seurat &middot; Scanpy &middot; Harmony &middot; SEACells &middot; CellTypist &middot; pySCENIC</p>
-                    <p class="text-sm text-gray-700 mt-1">
-                        End-to-end framework processing raw FASTQ data to count matrices, resolving batch variance with Harmony, aggregating sparse profiles into metacells via SEACells, running automated annotation with CellTypist, and inferring transcription factor regulon activity.
+        <!-- Technical Toolkit -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Comprehensive Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                
+                <!-- Programming & Scripting -->
+                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
+                    <h3 class="font-bold text-blue-700 mb-2">Programming & Scripting</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        <strong>Python:</strong> Scikit-learn, NumPy, Pandas, SciPy, Seaborn, Matplotlib, PyBEDTools<br>
+                        <strong>R:</strong> Seurat, Bioconductor, DESeq2, edgeR, tidyverse, ggplot2, pheatmap<br>
+                        <strong>Shell:</strong> Advanced Bash scripting, AWK, sed, regular expressions
                     </p>
                 </div>
 
-                <div>
-                    <h3 class="font-semibold text-base text-gray-900">Differential Expression & Omics Harmonization Suite</h3>
-                    <p class="text-xs text-gray-500 font-mono mt-0.5">DESeq2 &middot; limma &middot; PyBEDTools &middot; pheatmap &middot; ggplot2</p>
-                    <p class="text-sm text-gray-700 mt-1">
-                        Automated pipelines for standard and pseudobulk differential gene expression, multi-dataset identifier harmonization, genomic coordinate intersections, and publication-ready statistical graphics.
-                    </p>
-                    <a href="https://github.com/majjirambabu8" target="_blank" rel="noopener noreferrer" class="text-xs text-blue-700 hover:underline inline-block mt-1">View repository on GitHub &rarr;</a>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold text-base text-gray-900">Alternative Splicing & Polyadenylation Engine</h3>
-                    <p class="text-xs text-gray-500 font-mono mt-0.5">rMATS-turbo &middot; Python &middot; Docker &middot; SLURM</p>
-                    <p class="text-sm text-gray-700 mt-1">
-                        Batch-distributed workflow to quantify alternative splicing events (exon skipping, mutually exclusive exons, alternative splice sites, intron retention) and 3&prime; APA shifts across large clinical cohorts.
+                <!-- Single-Cell & Spatial Omics -->
+                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
+                    <h3 class="font-bold text-blue-700 mb-2">Single-Cell & Spatial Omics</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        <strong>Cell Ranger</strong>, <strong>Seurat</strong>, <strong>Scanpy</strong>, multi-sample batch integration via <strong>Harmony</strong>, <strong>SEACells</strong> metacell aggregation, automated annotation with <strong>CellTypist</strong>
                     </p>
                 </div>
 
-                <div>
-                    <h3 class="font-semibold text-base text-gray-900">Epigenomics & Motif Analysis Framework</h3>
-                    <p class="text-xs text-gray-500 font-mono mt-0.5">ATAC-seq &middot; CUT&RUN &middot; deepTools &middot; HOMER &middot; Bowtie2</p>
-                    <p class="text-sm text-gray-700 mt-1">
-                        Processing pipeline for peak calling, coverage matrix calculation over regulatory intervals, signal visualization, and de novo transcription factor motif discovery.
+                <!-- High-Throughput Sequencing -->
+                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
+                    <h3 class="font-bold text-blue-700 mb-2">Transcriptomics & Splicing</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        Bulk RNA-seq, 3′-targeted PolyA-seq, alternative polyadenylation (APA), <strong>rMATS-turbo</strong> alternative splicing analysis, <strong>STAR</strong>, <strong>Bowtie2</strong>, <strong>featureCounts</strong>
+                    </p>
+                </div>
+
+                <!-- Network Inference & Machine Learning -->
+                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
+                    <h3 class="font-bold text-blue-700 mb-2">Networks & Modeling</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        Gene regulatory network (GRN) reconstruction via <strong>SCENIC / pySCENIC</strong>, soft time-course clustering via <strong>Mfuzz</strong>, statistical modeling, translational biomarker discovery
+                    </p>
+                </div>
+
+                <!-- Epigenomics & Functional Analysis -->
+                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
+                    <h3 class="font-bold text-blue-700 mb-2">Epigenomics & Multi-Omics</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        <strong>ATAC-seq</strong>, <strong>CUT&RUN-seq</strong>, <strong>deepTools</strong> (computeMatrix, plotProfile), motif discovery via <strong>HOMER</strong>, WES/WGS variant calling, pathway enrichment with <strong>clusterProfiler</strong>
+                    </p>
+                </div>
+
+                <!-- HPC, Cloud & Infrastructure -->
+                <div class="p-5 bg-white shadow-sm border border-gray-200 rounded-lg">
+                    <h3 class="font-bold text-blue-700 mb-2">HPC, Cloud & Containers</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        Linux cluster administration, <strong>SLURM</strong> job scheduling, parallel processing (<code>xargs</code>, <code>parallel</code>), <strong>Docker</strong> containerization, cloud data sync with <strong>rclone</strong> and <strong>AWS S3</strong>
                     </p>
                 </div>
 
             </div>
         </section>
 
-        <!-- Academic & Scientific Impact -->
-        <section>
-            <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4">Scientific Impact</h2>
-            <div class="grid grid-cols-3 gap-4 text-center py-4 bg-gray-50 border border-gray-200 rounded">
-                <div>
-                    <div class="text-2xl font-bold text-gray-900">30+</div>
-                    <div class="text-xs text-gray-600 mt-1">Publications</div>
+        <!-- Software, Pipelines & Workflows -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">Pipelines & Computational Workflows</h2>
+            <div class="space-y-6 mt-4">
+                
+                <div class="border-l-4 border-blue-600 pl-4 bg-white p-5 shadow-sm border border-gray-200 rounded-r-lg">
+                    <h3 class="text-xl font-bold text-gray-900">End-to-End Single-Cell & Spatial Profiling Suite</h3>
+                    <p class="text-gray-500 text-sm font-mono mt-0.5">Cell Ranger, Seurat, Scanpy, Harmony, SEACells, CellTypist, SLURM</p>
+                    <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+                        Production-grade computational workflow processing raw FASTQ reads through Cell Ranger to multi-sample batch integration via Harmony, metacell aggregation with SEACells, automated cell annotation using CellTypist, and pseudobulk differential analysis with DESeq2.
+                    </p>
                 </div>
-                <div class="border-x border-gray-200">
-                    <div class="text-2xl font-bold text-gray-900">225+</div>
-                    <div class="text-xs text-gray-600 mt-1">Citations</div>
+
+                <div class="border-l-4 border-blue-600 pl-4 bg-white p-5 shadow-sm border border-gray-200 rounded-r-lg">
+                    <h3 class="text-xl font-bold text-gray-900">Differential Expression & Multi-Omics Harmonization</h3>
+                    <p class="text-gray-500 text-sm font-mono mt-0.5">R (DESeq2, pheatmap, ggplot2), Python (PyBEDTools, Seaborn), Bash</p>
+                    <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+                        Automated end-to-end pipelines for robust differential expression analysis, cross-modality identifier harmonization, genomic coordinate operations with PyBEDTools, and publication-ready Volcano and heatmap visualizations.
+                    </p>
+                    <a href="https://github.com/majjirambabu8" target="_blank" rel="noopener noreferrer" class="inline-block mt-3 text-blue-600 text-sm font-semibold hover:underline">View on GitHub &rarr;</a>
+                </div>
+
+                <div class="border-l-4 border-blue-600 pl-4 bg-white p-5 shadow-sm border border-gray-200 rounded-r-lg">
+                    <h3 class="text-xl font-bold text-gray-900">Alternative Splicing & APA Analysis Engine</h3>
+                    <p class="text-gray-500 text-sm font-mono mt-0.5">rMATS-turbo, Python, Docker, HPC/SLURM</p>
+                    <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+                        High-throughput analysis framework to quantify and visualize alternative splicing events (SE, MXE, A5SS, A3SS, RI) and 3′-targeted polyadenylation shifts across large cohorts in containerized HPC environments.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-blue-600 pl-4 bg-white p-5 shadow-sm border border-gray-200 rounded-r-lg">
+                    <h3 class="text-xl font-bold text-gray-900">Single-Cell Regulatory Network & Dynamics Pipeline</h3>
+                    <p class="text-gray-500 text-sm font-mono mt-0.5">pySCENIC, Mfuzz, Scikit-learn, Snakemake</p>
+                    <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+                        Scalable pipeline integrating single-cell transcriptomics with cis-regulatory motif databases for transcription factor regulon discovery alongside temporal pattern clustering and predictive biomarker discovery.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-blue-600 pl-4 bg-white p-5 shadow-sm border border-gray-200 rounded-r-lg">
+                    <h3 class="text-xl font-bold text-gray-900">Epigenomics & Motif Analysis Framework</h3>
+                    <p class="text-gray-500 text-sm font-mono mt-0.5">ATAC-seq, CUT&RUN, deepTools, HOMER, Bowtie2, Bioconductor</p>
+                    <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+                        Comprehensive processing loop for alignment, peak/matrix coverage calculations, signal profiling over genomic features, and de novo transcription factor motif discovery.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Scientific Impact -->
+        <section class="bg-blue-50/70 border border-blue-100 p-8 rounded-xl text-center">
+            <h2 class="text-sm font-semibold mb-6 text-slate-700 uppercase tracking-widest">Scientific Impact & Publications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div>
+                    <p class="text-4xl font-bold text-blue-700">30+</p>
+                    <p class="text-sm text-gray-600 font-medium mt-1">Peer-Reviewed Publications</p>
                 </div>
                 <div>
-                    <div class="text-2xl font-bold text-gray-900">10</div>
-                    <div class="text-xs text-gray-600 mt-1">h-index</div>
+                    <p class="text-4xl font-bold text-blue-700">225+</p>
+                    <p class="text-sm text-gray-600 font-medium mt-1">Citations</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold text-blue-700">10</p>
+                    <p class="text-sm text-gray-600 font-medium mt-1">h-index</p>
                 </div>
             </div>
         </section>
@@ -133,8 +169,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-gray-200 py-8 px-6 text-center text-xs text-gray-500">
-        &copy; 2026 Dr. Rambabu Majji &middot; Baylor College of Medicine &middot; Houston, Texas
+    <footer class="text-center py-8 text-gray-500 text-sm border-t border-gray-200 mt-12 bg-white">
+        &copy; 2026 Dr. Rambabu Majji | Baylor College of Medicine | Hosted on GitHub Pages
     </footer>
 
 </body>
